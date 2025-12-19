@@ -1,73 +1,282 @@
-CTRL + O
-ENTER
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tatenda Mpishi – Portfolio</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 40px;
-      max-width: 900px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-    }
-  </style>
-</head>
-<body>
-
-<a href="../index.html">← Back to Hub</a>
-
-<h1>My Portfolio</h1>
-<p>A selection of design and development projects completed during IS117.</p>
-
-<section>
-  <h2>Flat Design History</h2>
-  <p>An educational site exploring the evolution of flat design, why designers use it, and how it has evolved.</p>
-  <p>
-    🔗 <a href="../design_style/">Live Site</a><br>
-    💻 <a href="https://github.com/tatendampishi78-lab/flat-design-history">GitHub Repo</a>
-  </p>
-</section>
-
-<section>
-  <h2>Fitness App – Client Website</h2>
-  <p>A modern fitness app landing page built as a client-focused site with clear CTAs and clean UI.</p>
-  <p>
-    🔗 <a href="../client_site/">Live Site</a><br>
-    💻 <a href="https://github.com/tatendampishi78-lab/flat-design-site">GitHub Repo</a>
-  </p>
-</section>
-
-</body>
-</html>
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Portfolio — Tatenda Mpishi</title>
-</head>
-<body style="font-family:system-ui;margin:40px;max-width:900px;">
-<a href="../">← Back to Hub</a>
-<h1>Personal Portfolio</h1>
-<p>This is the start of my IS117 portfolio site. Next: hero, projects, skills, and contact.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tatenda Mpishi | Digital Web Designer</title>
+    <meta
+      name="description"
+      content="Tatenda Mpishi — Digital Web Designer. Clean, user-focused websites with emphasis on flat design and usability."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<h2>Sections to add</h2>
-<ul>
-<li>Hero (value prop + role)</li>
-<li>Projects (3+)</li>
-<li>Skills</li>
-<li>About</li>
-<li>Contact</li>
-</ul>
-</body>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">TM</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">NJIT • Business & Information Systems</p>
+            <h1>
+              Tatenda Mpishi
+              <span class="accent">Digital Web Designer</span>
+            </h1>
+
+            <p class="lead">
+              I design clean, user-focused websites that feel modern, readable, and
+              easy to navigate — with a strong emphasis on flat design, usability,
+              and front-end execution.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Email Me</a>
+            </div>
+
+            <div class="hero-meta" role="list">
+              <div class="meta-card" role="listitem">
+                <p class="meta-label">Focus</p>
+                <p class="meta-value">Design + Front-End</p>
+              </div>
+              <div class="meta-card" role="listitem">
+                <p class="meta-label">Specialty</p>
+                <p class="meta-value">Branding Sites</p>
+              </div>
+              <div class="meta-card" role="listitem">
+                <p class="meta-label">Goal</p>
+                <p class="meta-value">Fortune 100 Web Dev</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="Profile summary">
+            <div class="panel-top">
+              <div class="avatar" aria-hidden="true">TM</div>
+              <div>
+                <p class="panel-name">Tatenda Mpishi</p>
+                <p class="panel-role">Digital Web Designer</p>
+              </div>
+            </div>
+
+            <dl class="panel-dl">
+              <div>
+                <dt>University</dt>
+                <dd>NJIT</dd>
+              </div>
+              <div>
+                <dt>Major</dt>
+                <dd>Business & Information Systems</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:tm592@njit.edu">tm592@njit.edu</a></dd>
+              </div>
+            </dl>
+
+            <p class="panel-note">
+              I'm building production-ready web projects with clean structure,
+              responsive layout, and professional deployment on GitHub Pages.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container split">
+          <div>
+            <h2>About</h2>
+            <p class="muted">
+              I'm a digital web designer focused on clean interfaces that help users
+              move quickly and confidently. I enjoy building branding-focused sites
+              with clear typography, strong color systems, and responsive layouts.
+            </p>
+
+            <div class="pill-row" aria-label="Strengths">
+              <span class="pill">UI Layout</span>
+              <span class="pill">Flat Design</span>
+              <span class="pill">Usability</span>
+              <span class="pill">Responsive Design</span>
+              <span class="pill">GitHub Pages</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>What I care about</h3>
+            <ul class="checklist">
+              <li>Simple, readable layouts that follow a clear grid</li>
+              <li>Color systems that support meaning (primary, success, warning)</li>
+              <li>Fast, mobile-friendly experiences</li>
+              <li>Professional deployment and clean Git workflow</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p class="muted">Links below go to the live pages inside this repo.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="project">
+              <div class="project-top">
+                <p class="tag">Design Style Site</p>
+                <h3>Flat Design History</h3>
+                <p class="muted">
+                  Educational site explaining flat design: origins, key moments, and
+                  how the style evolved.
+                </p>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="../design_style/">Live Site</a>
+                <a
+                  class="btn btn-ghost"
+                  href="https://github.com/tatendampishi78-lab/flat-design-history"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repo
+                </a>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-top">
+                <p class="tag tag-alt">Client Site</p>
+                <h3>Fitness App Landing Page</h3>
+                <p class="muted">
+                  Conversion-focused layout with clear calls-to-action, benefits,
+                  and modern flat UI patterns.
+                </p>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="../client_site/">Live Site</a>
+                <a
+                  class="btn btn-ghost"
+                  href="https://github.com/tatendampishi78-lab/flat-design-site"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repo
+                </a>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-top">
+                <p class="tag tag-warn">Portfolio System</p>
+                <h3>IS117 Final Portfolio Hub</h3>
+                <p class="muted">
+                  A hub connecting all sites + a personal portfolio that positions
+                  my skills and goals professionally.
+                </p>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="../index.html">Hub</a>
+                <a class="btn btn-ghost" href="#contact">Contact</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="container split">
+          <div>
+            <h2>Skills</h2>
+            <p class="muted">
+              My current toolkit focuses on front-end foundations and professional
+              workflow.
+            </p>
+
+            <div class="grid-2">
+              <div class="card">
+                <h3>Development</h3>
+                <ul class="list">
+                  <li>HTML</li>
+                  <li>Responsive Design</li>
+                  <li>Git / GitHub</li>
+                  <li>GitHub Pages</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h3>Design</h3>
+                <ul class="list">
+                  <li>Flat Design</li>
+                  <li>UI Layout</li>
+                  <li>Color Theory</li>
+                  <li>Branding Pages</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Career Direction</h3>
+            <p class="muted">
+              My long-term goal is to become a web developer at a Fortune 100 company,
+              working on large-scale, user-facing products.
+            </p>
+            <p class="muted">
+              I'm building toward that with polished UI work, clean code habits, and
+              reliable deployments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section-alt">
+        <div class="container contact">
+          <div>
+            <h2>Contact</h2>
+            <p class="muted">
+              For opportunities, collaborations, or feedback:
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <p class="contact-label">Email</p>
+            <a class="contact-link" href="mailto:tm592@njit.edu">tm592@njit.edu</a>
+            <p class="contact-note muted">
+              I typically respond within 24–48 hours.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Tatenda Mpishi</p>
+        <a href="../index.html">Back to Hub</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

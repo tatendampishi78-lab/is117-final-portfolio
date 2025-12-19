@@ -1,4 +1,19 @@
 /* CodeMotion - Flat Design CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root{
+  --bg: #0b1020;
+  --surface: #121a33;
+  --text: #f3f6ff;
+  --muted: #b9c2e6;
+
+  --primary: #00c2ff;  /* cyan */
+  --secondary: #a78bfa;/* purple */
+  --success: #34d399;  /* green */
+  --danger: #fb7185;   /* pink/red */
+
+  --radius: 14px;
+}
 
 /* Reset and Base Styles */
 * {
@@ -55,27 +70,25 @@ html {
     }
 }
 
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-    color: #2d3748;
-    background-color: #f8fafc;
+body{
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0e1630);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-/* Color Variables - Fitness Theme */
-:root {
-    --primary-blue: #2563eb;
-    --accent-green: #059669;
-    --accent-orange: #ea580c;
-    --fitness-purple: #7c3aed;
-    --wellness-teal: #0891b2;
-    --text-primary: #111827;
-    --text-secondary: #4b5563;
-    --bg-light: #f8fafc;
-    --bg-white: #ffffff;
-    --border-light: #e5e7eb;
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-fitness: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+/* flat geometric background (no shadows) */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events:none;
+  opacity:.14;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0,194,255,.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 30%, rgba(167,139,250,.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 40% 80%, rgba(52,211,153,.35) 0 2px, transparent 3px);
+  background-size: 140px 140px;
 }
 
 /* Container */
@@ -166,16 +179,18 @@ body {
 }
 
 .cta-button-small {
-    background: var(--primary-blue) !important;
-    color: white !important;
+    background: var(--primary) !important;
+    color: #061022 !important;
+    border: 0;
     padding: 12px 24px;
     border-radius: 8px;
     font-weight: 600;
 }
 
 .cta-button-small:hover {
-    background: #2563eb !important;
+    background: var(--primary) !important;
     transform: translateY(-2px);
+    filter: brightness(1.1);
 }
 
 /* Parallax Background Styles */
@@ -287,8 +302,9 @@ body {
 
 .cta-button {
     display: inline-block;
-    background: var(--primary-blue);
-    color: white;
+    background: var(--primary);
+    color: #061022;
+    border: 0;
     padding: 20px 40px;
     border-radius: 12px;
     text-decoration: none;
@@ -298,8 +314,9 @@ body {
 }
 
 .cta-button:hover {
-    background: #2563eb;
+    background: var(--primary);
     transform: translateY(-3px);
+    filter: brightness(1.1);
 }
 
 .hero-cta-group {
@@ -317,10 +334,10 @@ body {
 
 .cta-button-secondary {
     display: inline-block;
-    background: transparent;
-    color: white;
+    background: var(--secondary);
+    color: #061022;
+    border: 0;
     padding: clamp(16px, 4vw, 20px) clamp(24px, 6vw, 40px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     text-decoration: none;
     font-weight: 600;
