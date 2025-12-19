@@ -1,21 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Client Site — Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotionMind - Upgrade Your Habits. Upgrade Yourself.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
-<body style="font-family:system-ui;margin:40px;max-width:900px;">
-<a href="../">← Back to Hub</a>
-<h1>Client Website</h1>
-<p>This will become a conversion-focused site for a real or fictional client (services, proof, contact).</p>
-<h2>Sections to add</h2>
-<ul>
-<li>Clear offer + CTA</li>
-<li>Services</li>
-<li>Testimonials / social proof</li>
-<li>Pricing or packages</li>
-<li>Contact / booking</li>
-</ul>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>MotionMind</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#workouts">Workouts</a>
+                <a href="#community">Community</a>
+                <a href="#wellness">Wellness</a>
+                <a href="#pricing" class="cta-button-small">Start Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero parallax-bg">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="hero-title">Upgrade Your Habits.<br>Upgrade Yourself.</h1>
+                <p class="hero-subtitle">Transform your daily routine with AI-powered micro-workouts, habit tracking, and wellness insights. Build the healthiest version of yourself, one habit at a time.</p>
+                <div class="hero-cta-group">
+                    <a href="#pricing" class="cta-button">Start Your Transformation</a>
+                    <a href="#community" class="cta-button-secondary">See Success Stories</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="zoom-in" data-aos-delay="300">
+                <div class="device-frame">
+                    <img
+                        src="https://images.unsplash.com/photo-1611695434398-4f4b330623e6?auto=format&fit=crop&w=400&h=800&q=80"
+                        alt="MotionMind fitness app dashboard"
+                        class="device-screen"
+                        loading="lazy"
+                    />
+                </div>
+
+                <div class="floating-card card-habits" data-aos="fade-right" data-aos-delay="600">
+                    <h4>App Features</h4>
+                    <ul class="feature-list">
+                        <li><span class="feature-icon">📊</span> AI Workout Analytics & Progress Tracking</li>
+                        <li><span class="feature-icon">🍎</span> Smart Nutrition Planner with Macro Counting</li>
+                        <li><span class="feature-icon">⏰</span> Adaptive Habit Reminders & Goal Setting</li>
+                        <li><span class="feature-icon">👥</span> Social Challenges & Community Leaderboards</li>
+                    </ul>
+                </div>
+
+                <div class="floating-card card-metrics" data-aos="fade-left" data-aos-delay="800">
+                    <h4>Wellness Score</h4>
+                    <p>94<span>/100</span></p>
+                    <p class="card-sub">Personal best this week!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Transform Your Daily Routine</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon orange">🏋️</div>
+                    <h3>AI-Powered Workouts</h3>
+                    <p>Personalized micro-workouts that adapt to your schedule, fitness level, and available time. From 2-minute desk stretches to full 30-minute sessions.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon blue">📊</div>
+                    <h3>Smart Habit Tracking</h3>
+                    <p>Build lasting habits with intelligent reminders, streak tracking, and progress insights. See how small changes create big transformations.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon green">💪</div>
+                    <h3>Wellness Dashboard</h3>
+                    <p>Track mood, energy levels, sleep quality, and fitness progress in one beautiful dashboard. Sync with Apple Health, Garmin, and Fitbit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workouts Section -->
+    <section id="workouts" class="workouts-section parallax-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Workouts That Fit Your Life</h2>
+            <div class="workouts-grid">
+                <div class="workout-card" data-aos="fade-right" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=400&h=300&q=80" alt="Morning Stretch Routine" loading="lazy" />
+                    <div class="workout-content">
+                        <h3>Morning Energizers</h3>
+                        <p>5-15 minute routines to kickstart your day with energy and focus.</p>
+                        <span class="workout-duration">5-15 min</span>
+                    </div>
+                </div>
+                <div class="workout-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=400&h=300&q=80" alt="Desk Break Exercises" loading="lazy" />
+                    <div class="workout-content">
+                        <h3>Desk Break Moves</h3>
+                        <p>Quick exercises to combat sitting fatigue and boost circulation.</p>
+                        <span class="workout-duration">2-5 min</span>
+                    </div>
+                </div>
+                <div class="workout-card" data-aos="fade-left" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=400&h=300&q=80" alt="Strength Training" loading="lazy" />
+                    <div class="workout-content">
+                        <h3>Strength Builders</h3>
+                        <p>No-equipment strength training for busy professionals.</p>
+                        <span class="workout-duration">15-30 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Section -->
+    <section id="wellness" class="wellness-section">
+        <div class="container">
+            <div class="wellness-content">
+                <div class="wellness-text" data-aos="fade-right">
+                    <h2>Complete Wellness Ecosystem</h2>
+                    <ul class="wellness-features">
+                        <li><strong>Mood Tracking:</strong> Monitor your emotional wellness alongside physical health</li>
+                        <li><strong>Sleep Insights:</strong> Understand how rest impacts your daily performance</li>
+                        <li><strong>Nutrition Guidance:</strong> Simple meal suggestions and hydration reminders</li>
+                        <li><strong>Stress Management:</strong> Breathing exercises and mindfulness practices</li>
+                        <li><strong>Social Challenges:</strong> Connect with friends for accountability and motivation</li>
+                    </ul>
+                </div>
+                <div class="wellness-visual" data-aos="fade-left" data-aos-delay="200">
+                    <div class="wellness-dashboard">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=500&h=600&q=80" alt="Wellness tracking dashboard" loading="lazy" />
+                        <div class="wellness-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">28</span>
+                                <span class="stat-label">Day Streak</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">94%</span>
+                                <span class="stat-label">Goal Success</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitness Community Section -->
+    <section id="community" class="fitness-community">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Join Our Fitness Community</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Real people achieving real results with MotionMind's personalized approach to fitness and wellness.
+            </p>
+
+            <div class="community-gallery">
+                <div class="gallery-item large" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&h=400&q=80" alt="Strength training with dumbbells" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h4>Strength Training</h4>
+                        <p>Build power with focused dumbbell workouts</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item medium" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&h=300&q=80" alt="Stay Strong motivational gym quote" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h4>Stay Motivated</h4>
+                        <p>Keep pushing your limits every day</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item small" data-aos="fade-right" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=400&h=300&q=80" alt="Modern fitness center interior" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h4>Professional Training</h4>
+                        <p>Certified fitness programs</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item medium" data-aos="fade-left" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&h=300&q=80" alt="Mountain trail running" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h4>Outdoor Adventures</h4>
+                        <p>Take your fitness beyond the gym</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item large" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=500&h=400&q=80" alt="Sleep wellness tips infographic" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h4>Wellness Education</h4>
+                        <p>Learn healthy sleep habits and recovery</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="community-stats" data-aos="fade-up" data-aos-delay="600">
+                <div class="stat-box">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Active Members</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Workouts Completed</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">4.9★</span>
+                    <span class="stat-label">User Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">See MotionMind in Action</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Experience the power of habit transformation with our intuitive, beautiful interface.
+            </p>
+
+            <div class="screenshots-grid">
+                <article class="screenshot-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img
+                        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&h=400&q=80"
+                        alt="Habit tracking mobile interface"
+                        loading="lazy"
+                    />
+                    <h3>Habit Streaks</h3>
+                    <p>Build momentum with visual streak tracking and celebration milestones.</p>
+                </article>
+
+                <article class="screenshot-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img
+                        src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=600&h=400&q=80"
+                        alt="Wellness analytics dashboard"
+                        loading="lazy"
+                    />
+                    <h3>Progress Analytics</h3>
+                    <p>Discover insights about your wellness journey with detailed progress tracking.</p>
+                </article>
+
+                <article class="screenshot-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img
+                        src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&h=400&q=80"
+                        alt="Workout guidance interface"
+                        loading="lazy"
+                    />
+                    <h3>Guided Workouts</h3>
+                    <p>Follow along with personalized workouts designed for your schedule and space.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="pricing" class="cta parallax-bg">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Ready to Transform Your Habits?</h2>
+                <p class="cta-subtitle">Join thousands building healthier, happier lives with MotionMind</p>
+                <div class="pricing" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="price-tag">Free Forever</div>
+                    <p class="price-description">Premium features available. Start your transformation today.</p>
+                </div>
+                <a href="#" class="cta-button" data-aos="bounce" data-aos-delay="400">Start Your Journey</a>
+                <p class="cta-note">No credit card required • Transform in 30 days or less</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>MotionMind</h3>
+                    <p>Upgrade Your Habits. Upgrade Yourself.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Support</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false,
+            offset: 100,
+            delay: 0,
+        });
+    </script>
 </body>
 </html>
